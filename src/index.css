@@ -1,0 +1,104 @@
+.todoListMain {
+  background: #fff;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 1em;
+}
+
+.header h2 {
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.task-input {
+  width: 70%;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.add-button {
+  padding: 0.5em 1em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+.theList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.circular-checkbox {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #cbe1d0;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  cursor: pointer;
+  position: relative;
+}
+
+.circular-checkbox:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.circular-checkbox:checked::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.todo-item.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.delete-button {
+  margin-left: auto;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #c82333;
+}
